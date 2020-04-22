@@ -12,8 +12,27 @@
             <canvas id="chart1"></canvas>
         </div>
 
+        <script>
+        $(document).ready(function () {
+            var month = ['Gennaio','Febbraio','Marzo','Aprile', 'Maggio','Giugno', 'Luglio', 'Agosto', 'Settembre','Novembre','Dicembre']
+            <?php include 'data.php'; ?>
+            var data = <?php echo $database; ?>;
+            var ctx = $('#chart1');
+            var chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: month,
+                    datasets: [{
+                        label: 'My First dataset',
+                        backgroundColor: 'lighgrey',
+                        borderColor: 'black',
+                        data: data
+                    }]
+                },
+            });
 
-
-        <script src="js/main.js" charset="utf-8"></script>
+        });
+        </script>
+        <!-- <script src="js/main.js" charset="utf-8"></script> -->
     </body>
 </html>
