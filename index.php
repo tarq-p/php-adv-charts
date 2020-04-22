@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
         <link rel="stylesheet" href="css/master.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.1/d3.min.js"></script>
-        <title>php-adv-charts</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <title></title>
     </head>
     <body>
-        <?php echo "ciao"; ?>
+        <div class="container">
+            <canvas id="chart1"></canvas>
+        </div>
 
-    <script src="js/main.js" charset="utf-8"></script>
+
+
+        <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>
