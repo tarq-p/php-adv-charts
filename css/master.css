@@ -6,8 +6,6 @@
 
 .container {
   height: 800px;
-  width: 800px;
-  padding-top: 50px;
+  width: 80%;
   margin: 0 auto;
-  padding-bottom: 60px;
 }
