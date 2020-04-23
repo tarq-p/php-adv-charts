@@ -19,7 +19,6 @@ $(document).ready(function() {
     //     },
     // });
 
-
     // Milestone 2
 
     $.ajax({
@@ -34,7 +33,6 @@ $(document).ready(function() {
             alert('Non va!')
         }
     });
-
 
     function lineChart(dataInput) {
         var ctx = $('#lineChart');
@@ -52,4 +50,21 @@ $(document).ready(function() {
             }
         });
     }
+
+    function pieChart(dataInput) {
+        var salesname = Object.keys(dataInput.fatturato_by_agent.data);
+        var salesforagent = Object.values(dataInput.fatturato_by_agent.data);
+        var ctx = $('#pieChart');
+        new Chart(ctx, {
+            type: "pie",
+            data: {
+                labels: salesname,
+                datasets: [{
+                    data: salesforagent,
+                    backgroundColor: ['red', 'green', 'blue', 'yellow']
+                }]
+            },
+        });
+    }
+
 });
