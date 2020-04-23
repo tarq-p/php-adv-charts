@@ -9,10 +9,13 @@
     </head>
     <body>
         <div class="container">
-            <?php include 'data.php'; ?>
-            <canvas id="chart1" data-database='<?php echo $database; ?>'></canvas>
+            <canvas id="lineChart"></canvas>
         </div>
         
+        <div class="container">
+            <canvas id="pieChart"></canvas>
+        </div>
+
         <script>
 
         </script>
